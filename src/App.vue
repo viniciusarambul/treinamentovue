@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <Cep />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Cep from './components/Cep.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Cep
+  },
+  data: function () {
+    return {
+      a: 3,
+      b: 5
+    }
   }
 }
 </script>
